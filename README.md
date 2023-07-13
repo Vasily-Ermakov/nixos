@@ -2,7 +2,7 @@
 - Create VM:
 
       VBoxManage createvm --name NixOS --ostype Linux_64 --register
-      VBoxManage modifyvm NixOS --memory 8192 --cpus 2
+      VBoxManage modifyvm NixOS --memory 8192 --cpus 2 --firmware efi
 - Add storage controller:
 
       VBoxManage storagectl NixOS --name IDE --add ide
